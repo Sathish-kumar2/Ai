@@ -1,0 +1,281 @@
+/* Global */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+}
+
+/* Main App */
+
+.app-container {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px;
+}
+
+/* Card */
+
+.main-card {
+  width: 100%;
+  max-width: 900px;
+
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 30px;
+
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+
+.app-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #111827;
+}
+
+/* Tabs */
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+
+  margin-bottom: 30px;
+
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+
+.tabs button,
+.generate-btn {
+  border: none;
+  border-radius: 10px;
+
+  padding: 12px 20px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+/* Tab Default */
+
+.tabs button {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+/* Active Tab */
+
+.tabs button.active {
+  background: #111827;
+  color: white;
+}
+
+/* Hover */
+
+.tabs button:hover,
+.generate-btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Content */
+
+.content-area {
+  width: 100%;
+}
+
+/* Shared Container */
+
+.card-container {
+  width: 100%;
+}
+
+/* Inputs */
+
+.input-section,
+.recipe-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Inputs */
+
+input {
+  width: 100%;
+  padding: 14px;
+
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+
+  font-size: 14px;
+
+  box-sizing: border-box;
+}
+
+/* Generate Button */
+
+.generate-btn {
+  background: #111827;
+  color: white;
+
+  height: 48px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.generate-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Output Box */
+
+.output-box {
+  margin-top: 20px;
+
+  width: 100%;
+  min-height: 180px;
+
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+
+  background: #f9fafb;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Recipe */
+
+.recipe-box {
+  align-items: flex-start;
+}
+
+.recipe-text {
+  width: 100%;
+  white-space: pre-wrap;
+
+  font-size: 14px;
+  line-height: 1.7;
+
+  color: #374151;
+}
+
+/* Image */
+
+.image-container {
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+}
+
+/* Empty + Loading */
+
+.empty-image-slot,
+.loading-box {
+  width: 260px;
+  height: 180px;
+
+  border: 2px dashed #d1d5db;
+  border-radius: 12px;
+
+  background: #f9fafb;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: #6b7280;
+}
+
+/* Generated Image */
+
+.generated-image {
+  width: 260px;
+  height: 180px;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+}
+
+/* Wrapper */
+
+.image-wrapper {
+  position: relative;
+}
+
+/* Download Button */
+
+.download-btn {
+  position: absolute;
+
+  top: 8px;
+  right: 8px;
+
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.7);
+
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+}
+
+/* Loading */
+
+.loading-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Spinner */
+
+.spin-icon {
+  animation: spin 1s linear infinite;
+}
+
+/* Animation */
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
